@@ -1,7 +1,18 @@
 
-visited_states = []
+visited_states = [] # (Jug3,Jug4)
 
-fringe = []  # (Jug3,Jug4)
+frontier = []
+
+
+class Node :
+
+    def __init__ (self, prev, j3, j4, way) :
+
+        self.prev = prev
+
+        self.value = (j3,j4)
+
+        self.way = way
 
 
 def goal_test(state) :
@@ -10,34 +21,70 @@ def goal_test(state) :
 
     return False
 
+def fill_3(state) : return Node(state, 3, state.value[1], 'Fill Jug3')
 
-def remove_front(fringe) :
+def fill_4(state) : return Node(state, state.value[0], 4 , 'Fill Jug4')
 
-    for state in fringe :
-        if state not in visited_states :
-            return state
+def empty_3(state) : return Node(state, 0, state.value[1], 'Empty Jug3')
 
+def empty_4(state) : return Node(state, state.value[0], 0, 'Empty Jug4')
 
-def expand(state) :
+def transfer_3_to_4(state) :
+
+    sum = state.value[0] + state.value[1]
+
+    if  sum <= 4 : return Node(state, 0, sum, 'Transfer Jug3 to Jug4')
+    else : return Node(state, sum - 4, 4, 'Transfer Jug3 to Jug4')
+
+def transfer_4_to_3(state) :
+
+    sum = state.value[0] + state.value[1]
+
+    if sum <= 3 : return Node(state, sum, 0, 'Transfer from Jug4 to Jug3')
+    else : return Node(state, 3, sum - 3, 'transfer from Jug4 to Jug3')
+
+def expand(node) :
 
     next = []
 
+    if node.value[0] != 3 :
+        next.append(fill_3(node))
 
+    if node.value[1] != 4 :
+        next.append(fill_4(node))
 
+    if node.value[0] != 0 :
+        next.append(empty_3(node))
+        next.append(transfer_3_to_4(node))
 
+    if node.value[1] != 0 :
+        next.append(empty_4(node))
+        next.append(transfer_4_to_3(node))
 
-def tree_search(problem,fringe) :
+    return next
 
-    fringe.append((0,0))
+def get_path(state) :
+    if state == None : return ""
+    return get_path(state.prev) + " -> [Action: " + state.way + " - State: " + str(state.value) + "]\n"
+
+def tree_search() :
+
+    frontier.append(Node(None, 0, 0, 'Root'))
 
     while(True) :
 
-        if len(fringe) == 0 : return "failure"
+        if len(frontier) == 0 : return "fail"
 
-        current = remove_front(fringe)
+        current = frontier.pop(0)
 
-        if goal_test(current) : return current
+        if goal_test(current.value) : return get_path(current)
 
-        fringe.append
+        next = expand(current)
+
+        for node in next :
+            frontier.append(node)
 
 
+if __name__ == '__main__' :
+
+    print(tree_search())
