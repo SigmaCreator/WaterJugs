@@ -18,12 +18,14 @@
       <file leaf-file-name="water_jugs.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/water_jugs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+            <state relative-caret-position="221">
+              <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
               <folding>
-                <element signature="e#70#190#0" expanded="false" />
-                <element signature="e#1313#1445#0" expanded="false" />
-                <element signature="e#1475#1523#0" expanded="false" />
+                <element signature="e#93#213#0" expanded="false" />
+                <element signature="e#528#700#0" expanded="false" />
+                <element signature="e#735#916#0" expanded="false" />
+                <element signature="e#942#1308#0" expanded="false" />
+                <element signature="e#1336#1468#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -80,6 +82,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -95,7 +98,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,7 +227,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24941361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -257,9 +259,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#70#190#0" expanded="false" />
-            <element signature="e#1313#1445#0" expanded="false" />
-            <element signature="e#1475#1523#0" expanded="false" />
+            <element signature="e#93#213#0" expanded="false" />
+            <element signature="e#528#700#0" expanded="false" />
+            <element signature="e#735#916#0" expanded="false" />
+            <element signature="e#942#1308#0" expanded="false" />
+            <element signature="e#1336#1468#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -269,9 +273,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#70#190#0" expanded="false" />
-            <element signature="e#1313#1445#0" expanded="false" />
-            <element signature="e#1475#1523#0" expanded="false" />
+            <element signature="e#93#213#0" expanded="false" />
+            <element signature="e#528#700#0" expanded="false" />
+            <element signature="e#735#916#0" expanded="false" />
+            <element signature="e#942#1308#0" expanded="false" />
+            <element signature="e#1336#1468#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -281,9 +287,25 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#70#190#0" expanded="false" />
-            <element signature="e#1313#1445#0" expanded="false" />
-            <element signature="e#1475#1523#0" expanded="false" />
+            <element signature="e#93#213#0" expanded="false" />
+            <element signature="e#528#700#0" expanded="false" />
+            <element signature="e#735#916#0" expanded="false" />
+            <element signature="e#942#1308#0" expanded="false" />
+            <element signature="e#1336#1468#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/water_jugs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#93#213#0" expanded="false" />
+            <element signature="e#528#700#0" expanded="false" />
+            <element signature="e#735#916#0" expanded="false" />
+            <element signature="e#942#1308#0" expanded="false" />
+            <element signature="e#1336#1468#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -291,12 +313,14 @@
     <entry file="file://$PROJECT_DIR$/water_jugs" />
     <entry file="file://$PROJECT_DIR$/water_jugs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="82" column="29" lean-forward="true" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+        <state relative-caret-position="221">
+          <caret line="68" column="16" lean-forward="true" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
           <folding>
-            <element signature="e#70#190#0" expanded="false" />
-            <element signature="e#1313#1445#0" expanded="false" />
-            <element signature="e#1475#1523#0" expanded="false" />
+            <element signature="e#93#213#0" expanded="false" />
+            <element signature="e#528#700#0" expanded="false" />
+            <element signature="e#735#916#0" expanded="false" />
+            <element signature="e#942#1308#0" expanded="false" />
+            <element signature="e#1336#1468#0" expanded="false" />
           </folding>
         </state>
       </provider>

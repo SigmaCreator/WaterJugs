@@ -3,6 +3,8 @@ visited_states = [] # (Jug3,Jug4)
 
 frontier = []
 
+expansion_counter = 0
+
 
 class Node :
 
@@ -62,11 +64,13 @@ def get_path(state) :
 
 def goal_test(state) :
 
-    if state[1] == 2 : return True
+    if state[0] == 2 and state[1] == 2 : return True
 
     return False
 
 def tree_search() :
+
+    global expansion_counter
 
     frontier.append(Node(None, 0, 0, 'Root'))
 
@@ -76,7 +80,11 @@ def tree_search() :
 
         current = frontier.pop(0)
 
+        if current.value in visited_states : continue
+
         if goal_test(current.value) : return get_path(current)
+
+        visited_states.append(current.value)
 
         next = expand(current)
 
