@@ -36,7 +36,7 @@ def transfer_4_to_3(node) :
     sum = node.value[0] + node.value[1]
 
     if sum <= 3 : return Node(node, sum, 0, 'Transfer from Jug4 to Jug3')
-    else : return Node(node, 3, sum - 3, 'transfer from Jug4 to Jug3')
+    else : return Node(node, 3, sum - 3, 'Transfer from Jug4 to Jug3')
 
 def expand(node) :
 
@@ -64,7 +64,7 @@ def get_path(state) :
 
 def goal_test(state) :
 
-    if state[0] == 2 and state[1] == 2 : return True
+    if state[1] == 2 : return True
 
     return False
 
@@ -72,7 +72,7 @@ def tree_search() :
 
     global expansion_counter
 
-    frontier.append(Node(None, 0, 0, 'Root'))
+    frontier.append(Node(None, 1, 1, 'Root'))
 
     while(True) :
 
@@ -82,9 +82,10 @@ def tree_search() :
 
         if current.value in visited_states : continue
 
+        visited_states.append(current.value)
+
         if goal_test(current.value) : return get_path(current)
 
-        visited_states.append(current.value)
 
         next = expand(current)
 
@@ -94,3 +95,5 @@ def tree_search() :
 if __name__ == '__main__' :
 
     print(tree_search())
+
+    print(visited_states)
