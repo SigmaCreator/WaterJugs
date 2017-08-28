@@ -72,7 +72,7 @@ def tree_search() :
 
     global expansion_counter
 
-    frontier.append(Node(None, 1, 1, 'Root'))
+    frontier.append(Node(None, 0, 0, 'Root'))
 
     while(True) :
 
